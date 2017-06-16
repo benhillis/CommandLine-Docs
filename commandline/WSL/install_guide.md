@@ -12,10 +12,14 @@ ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 
 # Installation Guide
 
-> **Important note**  
-	This is the first release of Bash on Windows and it is branded "beta" deliberately - it's not yet complete! You should expect many things to work and for some things to fail! We greatly appreciate you using Bash on Windows and helping us identify the issues we need to fix in order to deliver a great experience.
+> **Important note**:
+> Bash on Windows and the Windows Subsystem for Linux are “beta” features. We know that there are issues and gaps in 
+> compatibility. You should expect many things to work and for some things to fail. We appreciate 
+> any and all constructive feedback you can share from your experiences in using Bash/WSL. 
+> Your [bug reports](https://github.com/microsoft/bashonwindows) help us diagnose issues we 
+> need to fix in order to deliver a great experience.
 
-##Prerequisites
+## Prerequisites
 1. Your PC must be running (at a minimum) a 64-bit version of Windows 10 Anniversary Update. **Creators Update is recommended.**
 
 > To find your PC's CPU architecture and Windows version/build number, open 
@@ -24,27 +28,26 @@ ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 
 ![](media/system.png) 
 
-If your build is below 14393, try checking for updates.
+If your build is below 14393, [try checking for updates.](https://support.microsoft.com/en-us/instantanswers/c4a6d3df-d0d4-42b6-0018-ca48577f9909/update-windows-10)
 
 
 ## Installation
 In order to run Bash on Windows, you will need to manually:
-1. Turn-on Developer Mode
-2. Enable the "Windows Subsystem for Linux (beta)" feature via the GUI or the command-line:
 
-### Turn on Developer Mode
+### 1. Turn on Developer Mode
 1. Open Settings -> Update and Security -> For developers
 2. Select the Developer Mode radio button  
-  ![](media/updateAndSecurity.png)
+	![](media/updateAndSecurity.png)
 
-### Enable the Windows Subsystem for Linux feature (GUI)
+### 2. Enable the Windows Subsystem for Linux feature (GUI)
 1. From Start, search for "Turn Windows features on or off" (type 'turn')
 2. Select **Windows Subsystem for Linux (beta)**  
-  ![](media/windowsFeatures.png)
-  
 3. Click OK
+	![](media/windowsFeatures.png)
+  
 
-### Enable the Windows Subsystem for Linux feature (command-line)
+
+#### Enable the Windows Subsystem for Linux feature (command-line)
 
 Open a PowerShell prompt as administrator and run:
 
@@ -52,12 +55,11 @@ Open a PowerShell prompt as administrator and run:
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-### After enabling Windows Subsystem for Linux
-**Restart your computer when prompted**
+### 3. Restart your Computer
 
-> It is important that you **DO restart when prompted** as some of the infrastructure which Bash on Windows requires can only be loaded during Windows' boot-up sequence.
+> Portions of the Windows Subsystem for Linux can only be activated during the boot up sequence. Installation cannot proceed until this restart is completed.
 
-### Run Bash on Windows
+### 4. Accept the License and Expand the Image
 1. Open a command prompt
 1. Run `bash` 
   
@@ -75,7 +77,7 @@ This directory is marked as a hidden system folder for a very good reason:
 > Please read this [blog post](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/) 
 > for more information.
 
-### Create a UNIX user
+### 5. Create a UNIX user
 The first time you install Bash on Windows, you will be prompted to create a UNIX username and password.
 
 ![](media/new-user.png)
