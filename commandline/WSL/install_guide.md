@@ -65,15 +65,14 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
   
   ![](media/bashShellInstall.png)
   
-After you have accepted the License, the Ubuntu user-mode image will be downloaded and a "Bash on Ubuntu on Windows" shortcut will be added to your start menu.
+After you have accepted the License, the Ubuntu user-mode image will be downloaded and extracted. A "Bash on Ubuntu on Windows" shortcut will be added to your start menu.
 
 To launch Bash on Windows, either run `bash` at a cmd/PowerShell command-prompt, or use the start menu shortcut.
 
-After installation your Linux distribution will be located at: `%localappdata%\lxss\`
-This directory is marked as a hidden system folder for a very good reason: 
+After installation your Linux distribution will be located at: `%localappdata%\lxss\`.
 
-> **Avoid creating and/or modifying files in this location using Windows tools 
-> and apps!** If you do, it is likely that your Linux files will be corrupted and data loss may occur. 
+> **Avoid creating and/or modifying files in %localappdata%\lxss\ using Windows tools 
+> and apps!** If you do, it is likely that your Linux files will be corrupted and data loss may occur. Avoid this issue by using a directory located under /mnt/.
 > Please read this [blog post](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/) 
 > for more information.
 
