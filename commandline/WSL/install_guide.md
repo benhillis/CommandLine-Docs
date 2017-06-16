@@ -82,4 +82,4 @@ The first time you install Bash on Windows, you will be prompted to create a UNI
 ![](media/new-user.png)
   
 This UNIX username and password can be different from, and has no relationship to your Windows username 
-and password. [Read more](https://msdn.microsoft.com/en-us/commandline/wsl/user_support).
+and password. [Learn more about your UNIX account.](https://msdn.microsoft.com/en-us/commandline/wsl/user_support).
