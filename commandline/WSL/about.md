@@ -40,9 +40,7 @@ mounted under `/mnt/...`
 ## Getting started
 * [Installation guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
 * [Command reference](https://msdn.microsoft.com/en-us/commandline/wsl/reference)
-* [User accounts](https://msdn.microsoft.com/en-us/commandline/wsl/user_support)
 * [Frequently asked questions](https://msdn.microsoft.com/en-us/commandline/wsl/faq)
-* [Release notes](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes)
 
 
 ## Team Blogs
