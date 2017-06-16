@@ -10,7 +10,7 @@ ms.service: windows-subsystem-for-linux
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ---
 
-# <img src="media/bash_logo.png" width="600">
+# Bash on Windows 10
 
 > **Important note**:
 > Bash on Windows and the Windows Subsystem for Linux are “beta” features. We know that there are issues and gaps in 
