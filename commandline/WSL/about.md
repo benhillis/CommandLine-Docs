@@ -23,7 +23,7 @@ ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 Bash on Windows provides developers with a familiar shell and Linux environment in which 
 to run most Linux command-line tools, utilities and applications directly on Windows, **UNMODIFIED**, without the overhead of an entire Linux virtual machine!
 
-Bash/WSL allows you to:
+### Bash/WSL allows you to:
 
 1. Run common command-line utilities such as `grep`, `sed`, `awk`, etc.
 1. Use the Linux-compatible filesystem & hierarchy and access fixed Windows storage 
